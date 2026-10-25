@@ -1,4 +1,4 @@
-# MEE
+# MEE-C
 Mathematical expression evaluator - a CLI calculator. This works very similarly to an interpreted programming language but does not include any statements. All functions can be seen in [include/functions.hpp](include/functions.hpp) and all constants can be seen in [include/lexer.hpp](include/lexer.hpp). Very similar to the [C++ counterpart](https://github.com/Acerx-AMJ/MEE) but has less readable errors and constants are handled at parse-time.
 
 ## Features:

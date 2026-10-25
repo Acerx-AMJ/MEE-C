@@ -15,7 +15,12 @@ User Input --> Lexer --> Parser --> Evaluator --> Result
 4. Evaluator evaluates the AST tree and produces the final result
 
 ## Building
-This project is made in C and can be built like this:
+This project is made in C and can be built using CMake:
+```bash
+cmake -B build
+cmake --build build
+```
+The executable will be located in `build/mee`. Or build using your favorite compiler:
 ```bash
 gcc -Iinclude src/*.c -o mee -lm # remove -lm on Windows
 ```

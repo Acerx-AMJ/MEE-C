@@ -5,29 +5,6 @@
 #include <string.h>
 #include <time.h>
 
-// Mathematical expression evaluator by chalcinxx, this time in C.
-// This works very similarly to an interpreted programming language, but does
-// not include any statements. I wasn't going for efficiency while writing
-// this, as the calculator taking 1 millisecond longer does not change anything
-// for me.
-//
-// User Input --> Lexer --> Parser --> Evaluator --> Result
-//
-// Firstly, the input is retrieved from the user.
-// Secondly, the lexer converts the input into tokens and checks for any
-// unknown characters and keywords.
-// Thirdly, the parser reads through the tokens, produces an AST tree and
-// checks if the syntax is valid. Any constants are parsed in this step.
-// Lastly, the evaluator evaluates the AST tree step by step until it gets the
-// final result. Any functions found are called in this tep.
-//
-// A great reference for creating an interpreted language in typescript, as I
-// said before, a MEE is very similar to this:
-// https://www.youtube.com/playlist?list=PL_2VhOvlMk4UHGqYCLWc6GO8FaPl8fQTh
-//
-// Original project in C++:
-// https://github.com/orichalcink/MEE_Calculator
-
 int main()
 {
    // Seed random for randf and randi functions
